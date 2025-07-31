@@ -1,0 +1,35 @@
+#profile-card {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 270px;
+  background: #fff;
+  border: 2px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 22px 20px 16px 20px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 7%);
+  z-index: 1000;
+  text-align: center;
+}
+
+#profile-card img {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  border: 3px solid #007bff1a;
+}
+
+#profile-card .icons {
+  margin-top: 14px;
+}
+
+#profile-card .icons a {
+  margin: 0 8px;
+  color: #0073b1; /* LinkedIn blue */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#profile-card .icons a[href*="github"] { color: #222; }
+#profile-card .icons a[href*="twitter"] { color: #1da1f2; }
+#profile-card .icons a:hover { color: #0056b3; }

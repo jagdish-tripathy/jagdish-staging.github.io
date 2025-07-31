@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+  {{ super() }}
+  <aside id="profile-card">
+    <img src="{{ base_url }}/assets/img/Jagdish-photo.jpg" alt="Jagdish Tripathy" />
+    <h2 style="margin-bottom:0.4em;">Jagdish Tripathy</h2>
+    <p style="margin-top:0; font-size:1.05em; color:#444;">
+      Research Adviser<br>Bank of England
+    </p>
+    <div class="icons" style="margin-top:8px;">
+      <a href="https://www.linkedin.com/in/jagdish-tripathy-3a107b5/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://github.com/jagdish-tripathy" target="_blank" title="GitHub">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://twitter.com/jagdishtrip" target="_blank" title="Twitter">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+    </div>
+  </aside>
+{% endblock %}
