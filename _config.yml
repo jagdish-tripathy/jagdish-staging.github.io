@@ -87,6 +87,11 @@ footer:
 defaults:
   - scope:
       path: ""
+    values:
+      custom_css:
+        - /assets/css/custom.css
+  - scope:
+      path: ""
       type: posts
     values:
       layout: single
