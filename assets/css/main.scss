@@ -5,6 +5,16 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* TEST - This should make the entire page background red if CSS is loading */
+body {
+  background-color: red !important;
+}
+
+/* TEST - This should add a huge red border around the avatar */
+.author__avatar {
+  border: 10px solid red !important;
+}
+
 /* Force larger avatar - overriding all MM styles */
 .sidebar .author__avatar {
   display: table-cell !important;
