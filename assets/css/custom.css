@@ -1,8 +1,8 @@
 /* Make author avatar image larger everywhere */
 .author__avatar,
 .author__avatar img {
-  width: 4800px !important;
-  height: 4800px !important;
+  width: 480px !important;
+  height: 480px !important;
 }
 
 .author__avatar img {
