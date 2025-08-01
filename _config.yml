@@ -72,6 +72,10 @@ collections:
   posts:
     output: false
 
+include:
+  - _pages
+  - assets
+
 # Don’t show blog/index in nav
 # Optionally add:
 # include:
