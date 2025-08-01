@@ -49,7 +49,7 @@ plugins:
 author:
   name   : "Jagdish Tripathy"
   bio    : "Research Adviser, Bank of England"
-  avatar : "/assets/images/Jagdish-photo.jpg"
+  avatar : "/assets/images/website_Jagdish_photo.jpg"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
