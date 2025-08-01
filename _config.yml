@@ -77,12 +77,12 @@ footer:
       url: "https://twitter.com/jagdishtrip"
 
 # Main navigation bar (only Research and CV)
-navigation:
-  main:
-    - title: "Research"
-      url: /research/
-    - title: "CV"
-      url: /cv/
+#navigation:
+#  main:
+#    - title: "Research"
+#      url: /research/
+#    - title: "CV"
+#      url: /cv/
 
 defaults:
   - scope:
