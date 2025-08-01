@@ -9,14 +9,14 @@
 .sidebar .author__avatar {
   display: table-cell !important;
   vertical-align: top !important;
-  width: 300px !important;
-  height: 300px !important;
+  width: 200px !important;
+  height: 200px !important;
 }
 
 .sidebar .author__avatar img {
-  max-width: 300px !important;
-  width: 300px !important;
-  height: 300px !important;
+  max-width: 200px !important;
+  width: 200px !important;
+  height: 200px !important;
   border-radius: 15px !important; /* Less rounded, more square */
   object-fit: cover !important;
 }
@@ -38,7 +38,7 @@
 @media (max-width: 768px) {
   .sidebar .author__avatar,
   .sidebar .author__avatar img {
-    width: 200px !important;
-    height: 200px !important;
+    width: 160px !important;
+    height: 160px !important;
   }
 }
