@@ -1,0 +1,14 @@
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Custom avatar sizing */
+.author__avatar,
+.author__avatar img {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+}
+
+.author__avatar img {
+  object-fit: cover !important;
+}
