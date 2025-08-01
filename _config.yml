@@ -22,7 +22,7 @@ twitter_username: jagdishtrip
 github_username: jagdish-tripathy
 minimal_mistakes_skin: air
 timezone: Europe/London
-favicon_ico: "/assets/images/favicon.png"
+favicon_ico: "/assets/images/favicon-32x32.png"
 search: true
 
 # Build settings
