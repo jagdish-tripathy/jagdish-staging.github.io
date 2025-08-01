@@ -111,7 +111,10 @@ tag_archive:
 
 baseurl: "/jagdish-staging.github.io"
 
-
+sass:
+  sass_dir: _sass
+  style: compressed
+  
 #  - scope:
 #      path: ""
 #    values:
