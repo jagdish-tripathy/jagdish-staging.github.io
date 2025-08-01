@@ -16,15 +16,40 @@
 title: "Jagdish Tripathy"
 email: jagdish.tripathy@bankofengland.co.uk
 description: >-
-  Research Adviser at the Bank of England. Research on household finance, real-estate markets, banking, and macro-prudential policy. Expertise in macroeconomics and causal inference.
+  Research Adviser at the Bank of England. Research on household finance, real-estate markets, banking and macro-prudential policy. Expertise in macroeconomics and causal inference.
 
-minimal_mistakes_skin: air # (Or "default" or another for your preferred color palette)
+twitter_username: jagdishtrip
+github_username: jagdish-tripathy
+minimal_mistakes_skin: air
+timezone: Europe/London
+favicon_ico: "/assets/images/favicon.png"
+search: true
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+# timezone: # (already above)
+
+include:
+  - _pages
+  - assets
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-scholar
+  - jekyll-lunr-js-search
 
 author:
   name   : "Jagdish Tripathy"
-  avatar : "/assets/images/Jagdish-photo.jpg"
   bio    : "Research Adviser, Bank of England"
-
+  avatar : "/assets/images/Jagdish-photo.jpg"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -33,19 +58,12 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jagdish-tripathy"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jagdishtrip"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://jagdishtripathy.com"
 
-# Only "Research" and "CV" in the main nav
-# (No "About Me" nav; About is front page)
-navigation:
-  main:
-    - title: "Research"
-      url: /research/
-    - title: "CV"
-      url: /cv/
-
-# Footer links
 footer:
   links:
     - label: "LinkedIn"
@@ -55,28 +73,40 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jagdish-tripathy"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
+      icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jagdishtrip"
 
-# Defaults for pages
+# Main navigation bar (only Research and CV)
+navigation:
+  main:
+    - title: "Research"
+      url: /research/
+    - title: "CV"
+      url: /cv/
+
 defaults:
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true  # Show right profile card on all pages
+      author_profile: true
 
-# Disable posts, categories, and tags
-collections:
-  posts:
-    output: false
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-include:
-  - _pages
-  - assets
-
-# Don’t show blog/index in nav
-# Optionally add:
-# include:
-#   - _pages
+baseurl: "/jagdish-staging.github.io"
