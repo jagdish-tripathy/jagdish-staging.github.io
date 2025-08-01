@@ -87,13 +87,6 @@ footer:
 defaults:
   - scope:
       path: ""
-    values:
-      layout: single
-      author_profile: true
-      custom_css:
-        - /assets/css/custom.css
-  - scope:
-      path: ""
       type: posts
     values:
       layout: single
@@ -117,3 +110,12 @@ tag_archive:
   path: /tags/
 
 baseurl: "/jagdish-staging.github.io"
+
+
+#  - scope:
+#      path: ""
+#    values:
+#      layout: single
+#      author_profile: true
+#      custom_css:
+#        - /assets/css/custom.css
